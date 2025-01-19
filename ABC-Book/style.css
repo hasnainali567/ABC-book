@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+:root {
+  --d-blue: #000957;
+  --l-blue: #344CB7;
+  --l-blue2: #577BC1;
+  --yelo-color: #FFEB00;
+  --purple-clr: #640D5F;
+  --maron-clr: #D91656;
+  --orange-clr: #EB5B00;
+  --yellow-clr: #FFB200;
+  --g-pink-blue: linear-gradient(60deg, rgba(247, 7, 99, 1) 27%, rgba(0, 212, 255, 1) 91%);
+  --g-2:linear-gradient(229deg, rgba(227, 74, 4, 1) 1%, rgba(255, 0, 248, 1) 100%);
+}
+
+body {
+  background-image: url(/Assets/images/7406170B-7EEC-45A3-9B5C-49AEA547BA4B.jpeg);
+  background-position: center;
+  padding: 30px 0;
+}
+
+.book-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(247, 7, 99);
+  background: var(--g-pink-blue);
+  border-top: 5px solid var(--l-blue2);
+  border-bottom: 5px solid var(--l-blue2);
+  box-shadow: 5px 5px 10px 3px var(--yelo-color), -5px -5px 10px 3px var(--yelo-color);
+}
+
+.book-logo .image {
+  height: 180px;
+  width: 220px;
+  background-image: url(/Assets/images/3048D5C7-EBD7-427E-A005-C2AB40B9F5BF.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(5px 5px 10px #ff6a00);
+}
+
+
+.navbar {
+  position: sticky;
+  top: 10px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(227, 74, 4);
+  background: transparent;
+  -webkit-backdrop-filter: blur(50px);
+  margin: 40px auto;
+  padding: 10px;
+  border: 5px solid var(--l-blue);
+  border-radius: 10px;
+  box-shadow: 4px 0px 15px 5px var(--l-blue2), 0px 4px 15px 5px var(--l-blue2), -4px 0px 15px 5px var(--l-blue2), 0px -4px 15px 5px var(--l-blue2);
+  z-index: 100;
+}
+
+.navbar a {
+  display: inline-block;
+  color: var(--orange-clr);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  background-color: var(--purple-clr);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 0px 30px;
+  height: auto;
+}
+
+.cards {
+  position: relative;
+  color: black;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 5px solid whitesmoke;
+  border-radius: 20px;
+  width: 100%;
+  background: rgb(81, 1, 157);
+  background: linear-gradient(68deg, rgba(40, 230, 200, 1) 32%, rgba(230, 132, 35, 1) 85%);
+  backdrop-filter: blur(25px);
+  padding: 30px 30px 0 30px;
+  box-shadow: 8px 8px 15px 5px rgba(0, 0, 0, 0.6), -8px -8px 15px 5px rgba(0, 0, 0, 0.6);
+  border: 5px solid var(--yelo-color);
+}
+
+.cards h1 {
+  font-size: 12rem;
+  text-shadow: 2px 2px 5px grey;
+  z-index: 99;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cards h3 {
+  transform: translateY(-5%);
+  text-shadow: 2px 2px 5px grey;
+  font-size: 3.5rem;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  background-image: url(/Assets/images/Apple.JPG);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--d);
+  z-index200: 99;
+}
+
+
+.card-clr1{
+  background: rgb(81, 142, 157);
+background: linear-gradient(220deg, rgba(50, 142, 157, 1) 32%, rgba(170, 32, 135, 1) 85%);
+}
+
+
+
+body>a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  background: transparent;
+  color: var(--d-blue);
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px var(--l-blue);
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(50px);
+  border: 5px solid var(--l-blue);
+box-shadow: 4px 0px 5px var(--l-blue2), 0px 4px 5px var(--l-blue2), -4px 0px 5px var(--l-blue2), 0px -4px 5px var(--l-blue2);
+  border-radius: 10px;
+  z-index: 100;
+}
